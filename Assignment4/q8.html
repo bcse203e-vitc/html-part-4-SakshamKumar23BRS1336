@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+</head>
+<body>
+
+    <h2>Online Quiz</h2>
+
+    <form action="submit_quiz.html" method="POST">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h3>Question 1: What is the capital of France?</h3>
+        <input type="radio" id="paris" name="question1" value="Paris" required>
+        <label for="paris">Paris</label><br>
+        <input type="radio" id="london" name="question1" value="London">
+        <label for="london">London</label><br>
+        <input type="radio" id="rome" name="question1" value="Rome">
+        <label for="rome">Rome</label><br><br>
+
+        <h3>Question 2: Which of the following are programming languages?</h3>
+        <input type="checkbox" id="html" name="question2" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="question2" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="python" name="question2" value="Python">
+        <label for="python">Python</label><br><br>
+
+        <h3>Question 3: What is the largest planet in our solar system?</h3>
+        <input type="radio" id="jupiter" name="question3" value="Jupiter" required>
+        <label for="jupiter">Jupiter</label><br>
+        <input type="radio" id="earth" name="question3" value="Earth">
+        <label for="earth">Earth</label><br>
+        <input type="radio" id="mars" name="question3" value="Mars">
+        <label for="mars">Mars</label><br><br>
+
+        <label for="timer">Time Remaining: 10:00</label><br><br>
+
+        <button type="submit">Submit Quiz</button>
+
+    </form>
+
+</body>
+</html>
